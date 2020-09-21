@@ -8,13 +8,11 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve("./", "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const {render, renderManager, renderEngineer, renderIntern} = require("./lib/htmlRenderer");
+const {render} = require("./lib/htmlRenderer");
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 const teamMembers = [];
-const idArray = [];
-
 
 // Inputs for Manager, Engineer, & Intern
 function appMenu() {
@@ -222,7 +220,7 @@ function appMenu() {
         console.log(teamMembers);
 
         // build html files from teamMembers array
-        // fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
+        fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
     }
         
     createManager();
