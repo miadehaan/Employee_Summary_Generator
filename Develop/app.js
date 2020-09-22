@@ -14,6 +14,18 @@ const {render} = require("./lib/htmlRenderer");
 // and to create objects for each team member (using the correct classes as blueprints!)
 const teamMembers = [];
 
+// Capitalize first letter of team member's names
+function jsUcfirst(string) {
+    let nameArray = string.split(" "); // create array of first & last name
+    // console.log(nameArray);
+
+    let fullName = nameArray.map( (word) => {
+        return word.charAt(0).toUpperCase() + word.slice(1); // capitalize first letter
+    });
+    
+    return fullName.join(" "); // change array back to one string
+}
+
 // Inputs for Manager, Engineer, & Intern
 function appMenu() {
 
@@ -66,7 +78,7 @@ function appMenu() {
                 }
             }
         ]).then( (resp) => {
-            const manager = new Manager(resp.managerName, resp.managerId, resp.managerEmail, resp.managerOfficeNumber);
+            const manager = new Manager(jsUcfirst(resp.managerName), resp.managerId, resp.managerEmail, resp.managerOfficeNumber);
             // console.log(manager);
             // add manager to teamMembers array
             teamMembers.push(manager);
@@ -149,7 +161,7 @@ function appMenu() {
                 }
             }
         ]).then(resp => {
-            const engineer = new Engineer(resp.engineerName, resp.engineerId, resp.engineerEmail, resp.engineerGithub);
+            const engineer = new Engineer(jsUcfirst(resp.engineerName), resp.engineerId, resp.engineerEmail, resp.engineerGithub);
             // console.log(engineer);
             // add engineer to teamMembers array
             teamMembers.push(engineer);
@@ -208,7 +220,7 @@ function appMenu() {
         ]).then(resp => {
             // do something with answers, make new Intern()
             // add intern to teamMembers array
-            const intern = new Intern(resp.internName, resp.internId, resp.internEmail, resp.internSchool);
+            const intern = new Intern(jsUcfirst(resp.internName), resp.internId, resp.internEmail, resp.internSchool);
             // console.log(intern);
             teamMembers.push(intern);
 
