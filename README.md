@@ -1,6 +1,6 @@
 # Employee_Summary_Generator
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)](https://opensource.org/licenses/gpl-license)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)(https://opensource.org/licenses/MIT)]
 
 
 ## Description 
