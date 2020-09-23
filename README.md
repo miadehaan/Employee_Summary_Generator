@@ -40,7 +40,7 @@ Mia de Haan
 ## Test
 To test this application, run the unit tests by entering `npm run test` in the command line. 
 
-# Application
+## Application
 
 ![Gif Demo](./Assets/demo_gif.gif)
 
