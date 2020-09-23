@@ -26,6 +26,8 @@ This project was created using JavaScript Classes, as well as the following tech
 
 - Node.js
 - Inquirer Npm Package
+- fs Npm Package
+- path Npm Package
 - Jest
 - Bootstrap
     
@@ -40,7 +42,7 @@ To test this application, run the unit tests by entering `npm run test` in the c
 
 # Application
 
-![Gif Demo](./Assets/demo_gif.GIF)
+![Gif Demo](./Assets/demo_gif.gif)
 
 [Watch Full Demo Video Here](https://drive.google.com/file/d/1AfyUC6bkdvvGVK9d1hnYGz87e_qVNuB1/view)
     
