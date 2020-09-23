@@ -14,6 +14,7 @@ This is a CLI (command line application), using Node, that allows a user to inpu
 - [License](#License)
 - [Contribution](#Contribution)
 - [Test](#Test)
+- [Application](#Application)
 - [Questions](#Questions)
 
 
@@ -26,6 +27,7 @@ This project was created using JavaScript Classes, as well as the following tech
 - Node.js
 - Inquirer Npm Package
 - Jest
+- Bootstrap
     
 ## License
 This application is covered under the MIT license.
@@ -35,6 +37,12 @@ Mia de Haan
     
 ## Test
 To test this application, run the unit tests by entering `npm run test` in the command line. 
+
+# Application
+
+![Gif Demo](./Assets/demo_gif.GIF)
+
+[Watch Full Demo Video Here](https://drive.google.com/file/d/1AfyUC6bkdvvGVK9d1hnYGz87e_qVNuB1/view)
     
 ## Questions
 If you have any questions, please contact me at the email below. Check out my Github portfolio for more of my projects!
