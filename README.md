@@ -6,6 +6,8 @@
 ## Description 
 This is a CLI (command line application), using Node, that allows a user to input employee information for their specific dev team. This includes information for a  manager, engineers, and/or any interns. Once the information is collected, an output HTML document is created to display each employee's information in the browser. 
 
+[Deployed Application](https://miadehaan.github.io/Employee_Summary_Generator/)
+
 ## Table of Contents
 - [Description](#Description)
 - [Installation](#Installation)
